@@ -1,0 +1,59 @@
+.intro {
+  margin-top: 60px;
+  @include device(s) {
+    margin-top: 20px;
+  }
+}
+
+.logo {
+  margin-bottom: 60px;
+}
+
+.intro-info {
+  border-right: 2px solid $font-color-main;
+  max-width: 320px;
+  p {
+    padding-top: 10px;
+  }
+  p:first-child {
+    border-bottom: 2px solid  $font-color-main;
+    padding-bottom: 10px;
+  }
+}
+
+.intro-tel {
+  color: $font-color-det;
+  @include device(s) {
+    margin-bottom: 40px;
+  }
+  &::after {
+    content: '/ / / /';
+    display: block;
+    margin-top: 200px;
+    font-size: 220px;
+    letter-spacing: -90px;
+    color: $font-color-main;
+    @include device(m) {
+      margin-top: 80px;
+      font-size: 160px;
+      letter-spacing: -70px;
+    }
+    @include device(s) {
+      display: none;
+    }
+  }
+}
+
+.open {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: $success;
+  margin-left: 30px;
+ }
+
+ .main-photo {
+  border: 10px solid $margin-color;
+  width: 100%;
+ }
